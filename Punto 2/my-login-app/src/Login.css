@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; 
+}
+
+.login-container {
+    height: 100vh; 
+    background: linear-gradient(to bottom, #ffffff, #ffffff); 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.login-circle {
+    width: 100%;
+    height: 200px;
+    position: relative; 
+}
+
+.circle-left {
+    position: absolute;
+    top: -100px;
+    left: -30px;
+    width: 250px;
+    height: 250px;
+    background-color: #65BCFF; 
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.circle-right {
+    position: absolute;
+    top: -80px;
+    right: -90px;
+    width: 300px;
+    height: 300px;
+    background-color: #7377FF; 
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.login-form {
+    width: 90%; 
+    max-width: 400px; 
+    background-color: #ffffff; 
+    padding: 30px; 
+    margin-top: -10px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.usuario {
+    background-color: #42A7FF;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-bottom: 10%;
+}
+
+.usuario img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  position: absolute;
+}
+
+form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+}
+
+input[type="text"],
+input[type="password"] {
+  padding: 12px; 
+  border-radius: 12px; 
+  border: none; 
+  background-color: #7376FF; 
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  width: 80%;
+  margin-left: 10px;
+}
+input::placeholder {
+    color: #d8d8ff;
+    opacity: 0.9;
+    text-align: center;
+}
+
+.remember {
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
+    gap: 8px;
+    font-size: 14px;
+    color: #66ccff;
+    margin-top: -5px;
+}
+
+.login-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin-top: 40px;
+  }
+  
+  button {
+    background-color: #66ccff;
+    color: white;
+    padding: 10px 0; 
+    width: 60%; 
+    margin: 0 auto; 
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 14px; 
+    text-align: center;
+    cursor: pointer;
+    display: block;    
+  }
+  
+  .forgot {
+    text-align: center;
+    color: #66ccff;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+
